@@ -1,0 +1,103 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/rules_linear" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:background="@drawable/rounded_corner_withoutborder"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/saltwaterbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Saltwater"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:textColor="@color/selectedtabtext"
+                android:background="@drawable/tab_selector" />
+
+            <Button
+                android:id="@+id/freshwaterbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Freshwater"
+                android:textColor="@color/unselectedtabtext"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:background="@drawable/tab_selector"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/what"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:textColor="@color/blacktext"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:text="WHAT HAVE I CAUGHT?"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:orientation="vertical">
+
+            <!--<ListView
+                android:id="@+id/listviewSalt"
+                android:scrollbars="none"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"/>-->
+
+            <!--<ListView
+                android:id="@+id/listviewFresh"
+                android:scrollbars="none"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"/>-->
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/listviewSalt"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/listviewFresh"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

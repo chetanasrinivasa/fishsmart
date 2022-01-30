@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mobiddiction.fishsmart">
+
+    <uses-permission android:name="com.google.maps.android.utils.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- <uses-permission android:name="android.permission.CAMERA" /> -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="false"
+        android:appComponentFactory="whateverString"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:appComponentFactory,android:allowBackup">
+        <activity android:name=".Maps.MapboxActivity"></activity>
+        <activity
+            android:name=".Rules.PdfActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoTitleBar" />
+        <activity
+            android:name=".TermAndCondition.TermsAndConditionActivity"
+            android:label="@string/terms_and_conditions"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoTitleBar" />
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:largeHeap="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainFrameActivity"
+            android:label="@string/title_activity_main_frame"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="com.fishsmart.toggle" />
+                <action android:name="com.fishsmart.gallery" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Home.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name=".Weather.WeatherActivity"
+            android:label="@string/title_activity_home"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoTitleBar" />
+        <activity
+            android:name=".Maps.MapsActivity"
+            android:label="@string/title_activity_home"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Species.SpeciesActivity"
+            android:label="@string/title_activity_species"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NewSpecies.NewSpeciesActivity"
+            android:label="@string/title_activity_species"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Species.SpeciesDetailActivity"
+            android:label="@string/title_activity_speciesdetail"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoTitleBar" />
+        <activity
+            android:name=".Rules.RulesActivity"
+            android:label="@string/title_activity_species"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Rules.SaltWaterActivity"
+            android:label="@string/title_activity_saltwater"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Rules.SaltWaterActivitynew"
+            android:label="@string/title_activity_saltwater"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Rules.FreshWaterActivity"
+            android:label="@string/title_activity_freshwater"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Rules.FreshWaterActivitynew"
+            android:label="@string/title_activity_freshwater"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".More.MoreActivity"
+            android:label="@string/title_activity_home"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Gallery.GalleryActivity"
+            android:label="@string/title_activity_gallery"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Gallery.GalleryDetailActivity"
+            android:label="@string/title_activity_gallerydetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NewsActivity"
+            android:label="@string/title_activity_NewsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LicenseActivity"
+            android:label="@string/title_activity_NewsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ContactActivity"
+            android:label="@string/title_activity_ContactActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WebviewActivity"
+            android:label="@string/title_activity_webview"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoTitleBar" />
+        <activity
+            android:name=".Search.SearchActivity"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@layout/activity_search" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCDzFLn2FjbPIA2J7sOFGLCDiOxvXkoZLg" /> <!-- android:name="com.google.android.maps.v2.API_KEY" -->
+        <!-- Original Key: AIzaSyCmz0yk9ykb1EnYgiKKv98qfNXZM_BPPXU -->
+        <!-- <uses-library android:name="org.apache.http.legacy" android:required="false"/> -->
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="d64aedf51f9745a9a016195aaa90b6052a94fb9b" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <receiver
+            android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.analytics.AnalyticsService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.google.android.gms.analytics.CampaignTrackingReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.google.android.gms.analytics.CampaignTrackingService" />
+
+        <activity
+            android:name=".Onboarding.OnboardingActivity"
+            android:label="@string/title_activity_gallerydetail"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoTitleBar.FullScreen" />
+        <activity
+            android:name=".SignUp.SignUpActivity"
+            android:label="@string/title_activity_gallerydetail"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoTitleBar.FullScreen" />
+        <activity
+            android:name=".SignIn.SignInActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoTitleBar.FullScreen" />
+        <activity
+            android:name=".ForgotPassword.ForgotPasswordActivity"
+            android:label=""
+            android:parentActivityName=".SignIn.SignInActivity"
+            android:screenOrientation="portrait">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SignIn.SignInActivity" />
+        </activity>
+        <activity
+            android:name=".CatchLog.CatchlogActivity"
+            android:label="@string/title_activity_catchlog"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CatchLog.AddCatchlogActivity"
+            android:label="@string/title_activity_catchlog"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name=".CatchLog.CatchlogSpeciesActivity"
+            android:label="@string/title_activity_catchlog"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity
+            android:name=".CatchLog.ChooseLocationActivity"
+            android:label="@string/title_activity_catchlog"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoTitleBar" />
+        <activity
+            android:name=".CatchLog.CatchlogMeasurmentActivity"
+            android:label="@string/title_activity_catchlog"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoTitleBar" />
+        <activity
+            android:name=".CatchLog.CatchlogMethodsActivity"
+            android:label="@string/title_activity_catchlog"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoTitleBar" />
+        <activity
+            android:name=".CatchLog.ChooseLocationFromListActivity"
+            android:label="@string/title_activity_catchlog"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoTitleBar" />
+        <activity
+            android:name=".Profile.ProfileActivity"
+            android:label="@string/user_profile"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoTitleBar" />
+        <activity
+            android:name=".Profile.UpdateProfileActivity"
+            android:label="@string/update_user_profile"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoTitleBar" />
+        <activity
+            android:name=".Profile.ChangePasswordActivity"
+            android:label="@string/change_password"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoTitleBar" />
+        <activity
+            android:name=".notification.NotificationActivity"
+            android:label="@string/notifications"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoTitleBar" />
+        <activity
+            android:name=".TermAndCondition.PrivacyStatementActivity"
+            android:label="@string/terms_and_conditions"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoTitleBar" /> <!-- New Push notification (Firebase Cloud Messaging / FCM) -->
+        <service android:name=".notification.firebase_services.TokenService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name=".notification.firebase_services.NotificationBroadcastReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

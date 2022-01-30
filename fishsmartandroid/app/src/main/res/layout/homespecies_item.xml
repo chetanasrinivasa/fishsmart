@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relFeaturedRecord"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/mainlayout"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="15dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/rounded_corner_withoutborder"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/exclamlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:clickable="false">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/exclaim_icon"
+                android:clickable="false"/>
+
+            <TextView
+                android:id="@+id/exclaimtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/morpinch"
+                android:textSize="@dimen/font_size_sub_text_small"
+                android:clickable="false"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="126dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:clickable="false">
+
+            <ImageView
+                android:id="@+id/fishimg"
+                android:layout_width="115dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@android:color/white"
+                android:cropToPadding="true"
+                android:src="@drawable/placeholder_grey"
+                android:clickable="false"/>
+
+            <TextView
+                android:id="@+id/fishname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textAllCaps="true"
+                android:textColor="@color/darkmorpinch"
+                android:textSize="20sp"
+                android:clickable="false"/>
+
+            <TextView
+                android:id="@+id/fishsubname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textAllCaps="false"
+                android:textColor="@color/unselectedtabtext"
+                android:textSize="@dimen/font_size_sub_text_small"
+                android:clickable="false"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linklayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/orangebkg"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:clickable="false">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:clickable="false">
+
+                <TextView
+                    android:id="@+id/rulesapply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="Rules Apply"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/font_size_sub_text_small"
+                    android:clickable="false"/>
+
+                <TextView
+                    android:id="@+id/sizelimittext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/font_size_sub_text_small"
+                    android:clickable="false"/>
+
+            </LinearLayout>
+
+            <ImageButton
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/linkicon"
+                android:clickable="false"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/detailbtn"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="15dp"
+        android:alpha="0"
+        android:clickable="false"/>
+
+</RelativeLayout>

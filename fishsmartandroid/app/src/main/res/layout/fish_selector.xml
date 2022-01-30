@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_corner_withoutborder"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/saltwaterbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saltwater"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:textColor="@color/selectedtabtext"
+            android:background="@drawable/tab_selector" />
+
+        <Button
+            android:id="@+id/freshwaterbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Freshwater"
+            android:textColor="@color/unselectedtabtext"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:background="@drawable/tab_selector"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/what"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textColor="@color/blacktext"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:text="WHAT HAVE I CAUGHT?"/>
+
+</LinearLayout>

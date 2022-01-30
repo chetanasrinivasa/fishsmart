@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/mapview"
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/filterlayout"
+        android:layout_centerHorizontal="true"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/dropdownbtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner_withborder"
+            android:clickable="true"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/mapnametext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:ellipsize="end"
+                android:layerType="software"
+                android:maxLines="1"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:text="Marine Protected Areas and Spearfishing Closures"
+                android:textColor="@color/unselectedtabtext"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/arrowimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/downarrow"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/dropdownlayout"
+            android:layout_below="@+id/dropdownbtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:background="@drawable/rules_filter_bkg"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/layoutmarine"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    android:id="@+id/marinetext"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:layerType="software"
+                    android:padding="10dp"
+                    android:text="Marine Protected Areas and Spearfishing Closures"
+                    android:textColor="@color/blacktext"
+                    android:textSize="18.2sp" />
+
+                <ToggleButton
+                    android:id="@+id/marinetogglebtn"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:textOn=""
+                    android:textOff=""
+                    android:layout_gravity="center_vertical|end"
+                    android:background="@drawable/maptoggle"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/layoutartificial"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    android:id="@+id/artificialtext"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|start"
+                    android:textColor="@color/blacktext"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:textSize="18.2sp"
+                    android:text="Artificial Reefs"/>
+
+                <ToggleButton
+                    android:id="@+id/artificialtogglebtn"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:textOn=""
+                    android:textOff=""
+                    android:layout_gravity="center_vertical|end"
+                    android:background="@drawable/maptoggle"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/layoutfish"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    android:id="@+id/fishtext"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/blacktext"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:textSize="18.2sp"
+                    android:text="Fish Aggregating Devices"/>
+
+                <ToggleButton
+                    android:id="@+id/fishtogglebtn"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:textOn=""
+                    android:textOff=""
+                    android:layout_gravity="center_vertical|right"
+                    android:background="@drawable/maptoggle"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/mylocation"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="25dp"
+        android:scaleType="centerInside"
+        android:background="@null"
+        android:src="@drawable/locicon" />
+
+</RelativeLayout>

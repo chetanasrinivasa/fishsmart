@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="#ffffff" />
+
+    <com.mobiddiction.fishsmart.util.CustomScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/nestedScrollView"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/person_properties"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/gridViewContacts"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:numColumns="2" />
+
+        </LinearLayout>
+
+    </com.mobiddiction.fishsmart.util.CustomScrollView>
+
+    <ProgressBar
+        android:id="@+id/progress_wheel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/error_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="No data available"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:textColor="@color/blacktext"/>
+
+</RelativeLayout>

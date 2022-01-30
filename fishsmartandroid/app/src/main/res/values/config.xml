@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- Font paths -->
+    <string name="bold_font_path">Fontfabric-PantonBold.otf</string>
+    <string name="light_font_path">SourceSansPro-Light.otf</string>
+    <string name="regular_font_path">SourceSansPro-Regular.otf</string>
+    <string name="semibold_font_path">SourceSansPro-Semibold.otf</string>
+    <string name="Panton_SemiBold_Italic">Fontfabric-PantonSemiBold.otf</string>
+
+
+</resources>

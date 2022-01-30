@@ -1,0 +1,908 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#eeeeee"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="fill_horizontal"
+        android:background="@drawable/home_header">
+
+        <ImageButton
+            android:id="@+id/backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/backbtn"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/btnlayout"
+        android:layout_below="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_corner_withoutborder"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/summarybtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Summary"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:textColor="@color/selectedtabtext"
+            android:background="@drawable/tab_selector" />
+
+        <Button
+            android:id="@+id/trapbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gear Rules"
+            android:textColor="@color/unselectedtabtext"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:background="@drawable/tab_selector"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/summaryscrollview"
+        android:layout_below="@+id/btnlayout"
+        android:scrollbars="none"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/paratext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_size_sub_text"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/unselectedtabtext"
+                android:text="The table provides a maximum of each gear type permitted per person in use or in possession at any time. There are additional requirements for each gear type (see saltwater fishing guide for more info)."/>
+
+            <TextView
+                android:id="@+id/geartype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:textColor="@color/blacktext"
+                android:layout_marginBottom="20dp"
+                android:text="GEAR TYPE"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_corner_withoutborder"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_sub_text"
+                    android:textColor="@color/selectedtabtext"
+                    android:text="Rods or lines"/>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/linegray"/>
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17.8sp"
+                    android:textColor="@color/unselectedtabtext"
+                    android:text="Number permitted: 4"/>
+
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_sub_text"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/selectedtabtext"
+                    android:text="Hooks per line *"/>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/linegray"/>
+
+                <TextView
+                    android:id="@+id/text4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_sub_text"
+                    android:textColor="@color/unselectedtabtext"
+                    android:text="Number permitted: 3 hooks or gangs of hooks"/>
+
+                <TextView
+                    android:id="@+id/text5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_sub_text"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/selectedtabtext"
+                    android:text="Rod/hand jigging line º"/>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/linegray"/>
+
+                <TextView
+                    android:id="@+id/text6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_sub_text"
+                    android:textColor="@color/unselectedtabtext"
+                    android:text="Number permitted: 1 rod or handline with up to 6 single hooks with lures attached º"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tapontext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/unselectedtabtext"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_corner_withoutborder"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_sub_text"
+                    android:textColor="@color/selectedtabtext"
+                    android:text="Bait trap"/>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/linegray"/>
+
+                <TextView
+                    android:id="@+id/text8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14.6sp"
+                    android:textColor="@color/unselectedtabtext"
+                    android:text="Number permitted: 1"/>
+
+                <TextView
+                    android:id="@+id/text9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_sub_text"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/selectedtabtext"
+                    android:text="Hoop net or witches hat"/>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/linegray"/>
+
+                <TextView
+                    android:id="@+id/text10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14.6sp"
+                    android:textColor="@color/unselectedtabtext"
+                    android:text="Number permitted: 4"/>
+
+                <TextView
+                    android:id="@+id/text11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_sub_text"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/selectedtabtext"
+                    android:text="Crab trap"/>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/linegray"/>
+
+                <TextView
+                    android:id="@+id/text12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14.6sp"
+                    android:textColor="@color/unselectedtabtext"
+                    android:text="Number permitted: 2"/>
+
+                <TextView
+                    android:id="@+id/text13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_sub_text"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/selectedtabtext"
+                    android:text="Spanner crab net"/>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/linegray"/>
+
+                <TextView
+                    android:id="@+id/text14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14.6sp"
+                    android:textColor="@color/unselectedtabtext"
+                    android:text="Number permitted: 1"/>
+
+                <TextView
+                    android:id="@+id/text15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_sub_text"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/selectedtabtext"
+                    android:text="Hand hauled prawn net"/>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/linegray"/>
+
+                <TextView
+                    android:id="@+id/text16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14.6sp"
+                    android:textColor="@color/unselectedtabtext"
+                    android:text="Number permitted: 1"/>
+
+                <TextView
+                    android:id="@+id/text17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_sub_text"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/selectedtabtext"
+                    android:text="Scissors (push) prawn net"/>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/linegray"/>
+
+                <TextView
+                    android:id="@+id/text18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14.6sp"
+                    android:textColor="@color/unselectedtabtext"
+                    android:text="Number permitted: 1"/>
+
+                <TextView
+                    android:id="@+id/text19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_sub_text"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/selectedtabtext"
+                    android:text="Dip or scoop prawn net"/>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/linegray"/>
+
+                <TextView
+                    android:id="@+id/text20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14.6sp"
+                    android:textColor="@color/unselectedtabtext"
+                    android:text="Number permitted: 1"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/gang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/unselectedtabtext"
+                android:text="* A gang of hooks should have no more than 5 hooks. No more than 3 trebles attached to a lure."/>
+
+            <TextView
+                android:id="@+id/must"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/unselectedtabtext"
+                android:text="º Must be used by the method of hand jigging only."/>
+
+            <TextView
+                android:id="@+id/summary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:textColor="@color/blacktext"
+                android:layout_marginBottom="20dp"
+                android:text="SUMMARY"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@drawable/rounded_corner_withoutborder"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/listtext"
+                    android:textSize="14.6sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/unselectedtabtext"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ScrollView
+        android:visibility="gone"
+        android:id="@+id/traprulesscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btnlayout"
+        android:scrollbars="none"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/baittrap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:textColor="@color/blacktext"
+                android:layout_marginBottom="20dp"
+                android:text="BAIT TRAP"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:background="@drawable/rounded_corner_withoutborder"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/trap_sw_bait"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_corner_withoutborder"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_sub_text"
+                    android:textColor="@color/selectedtabtext"
+                    android:text="Rules"/>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/linegray"/>
+
+                <TextView
+                    android:id="@+id/ruleslisttext1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_sub_text"
+                    android:textColor="@color/unselectedtabtext"
+                    android:text="Number permitted: 4"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/hoopnet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:textColor="@color/blacktext"
+                android:layout_marginBottom="20dp"
+                android:text="HOOP NET OR WITCHES HAT"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_corner_withoutborder"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/net_sw_hoop"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_corner_withoutborder"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_sub_text"
+                    android:textColor="@color/selectedtabtext"
+                    android:text="Rules"/>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/linegray"/>
+
+                <TextView
+                    android:id="@+id/ruleslisttext2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_sub_text"
+                    android:textColor="@color/unselectedtabtext"
+                    android:text="Number permitted: 4"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/crabtrap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:textColor="@color/blacktext"
+                android:layout_marginBottom="20dp"
+                android:text="CRAB TRAP"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:background="@drawable/rounded_corner_withoutborder"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/trap_sw_crab"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_corner_withoutborder"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textSize="@dimen/font_size_sub_text"
+                    android:textColor="@color/selectedtabtext"
+                    android:text="Rules"/>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/linegray"/>
+
+                <TextView
+                    android:id="@+id/ruleslisttext3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_sub_text"
+                    android:textColor="@color/unselectedtabtext"
+                    android:text="Number permitted: 4"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/lobster"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:textColor="@color/blacktext"
+                android:layout_marginBottom="20dp"
+                android:text="LOBSTER TRAP"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:background="@drawable/rounded_corner_withoutborder"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/trap_sw_lobster"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_corner_withoutborder"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_sub_text"
+                    android:textColor="@color/selectedtabtext"
+                    android:text="Rules"/>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/linegray"/>
+
+                <TextView
+                    android:id="@+id/ruleslisttext4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_sub_text"
+                    android:textColor="@color/unselectedtabtext"
+                    android:text="Number permitted: 4"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/spanner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:textColor="@color/blacktext"
+                android:layout_marginBottom="20dp"
+                android:text="SPANNER CRAB NET"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:background="@drawable/rounded_corner_withoutborder"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/trap_sw_spanner_crab"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_corner_withoutborder"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_sub_text"
+                    android:textColor="@color/selectedtabtext"
+                    android:text="Rules"/>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/linegray"/>
+
+                <TextView
+                    android:id="@+id/ruleslisttext5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_sub_text"
+                    android:textColor="@color/unselectedtabtext"
+                    android:text="Number permitted: 4"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/hand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:textColor="@color/blacktext"
+                android:layout_marginBottom="20dp"
+                android:text="HAND HAULED PRAWN NET"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:background="@drawable/rounded_corner_withoutborder"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/nets_sw_hand_prawn"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_corner_withoutborder"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_sub_text"
+                    android:textColor="@color/selectedtabtext"
+                    android:text="Rules"/>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/linegray"/>
+
+                <TextView
+                    android:id="@+id/ruleslisttext6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_sub_text"
+                    android:textColor="@color/unselectedtabtext"
+                    android:text="Number permitted: 4"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/scissor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:textColor="@color/blacktext"
+                android:layout_marginBottom="20dp"
+                android:text="SCISSORS (PUSH) PRAWN NET"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:background="@drawable/rounded_corner_withoutborder"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/nets_sw_scissors_prawn"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_corner_withoutborder"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_sub_text"
+                    android:textColor="@color/selectedtabtext"
+                    android:text="Rules"/>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/linegray"/>
+
+                <TextView
+                    android:id="@+id/ruleslisttext7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_sub_text"
+                    android:textColor="@color/unselectedtabtext"
+                    android:text="Number permitted: 4"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/dip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:textColor="@color/blacktext"
+                android:layout_marginBottom="20dp"
+                android:text="DIP OR SCOOP PRAWN NET"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:background="@drawable/rounded_corner_withoutborder"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/nets_sw_dip_prawn"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_corner_withoutborder"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_sub_text"
+                    android:textColor="@color/selectedtabtext"
+                    android:text="Rules"/>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/linegray"/>
+
+                <TextView
+                    android:id="@+id/ruleslisttext8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_sub_text"
+                    android:textColor="@color/unselectedtabtext"
+                    android:text="Number permitted: 4"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!--TOOLBAR-->
+    <include layout="@layout/toolbar"></include>
+
+</RelativeLayout>

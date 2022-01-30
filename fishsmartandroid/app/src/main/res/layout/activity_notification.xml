@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor_alert_button_press"
+    tools:context="com.mobiddiction.fishsmart.Home.HomeActivity">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="fill_horizontal"
+        android:background="@drawable/home_header">
+
+        <ImageButton
+            android:id="@+id/backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/backbtn" />
+
+        <TextView
+            android:id="@+id/nav_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="NOTIFICATIONS"
+            android:fontFamily="@font/bariol_regular"
+            android:textColor="@color/white"
+            android:textSize="21sp" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:layout_below="@+id/header"
+        android:scrollbars="none"
+        android:id="@+id/listview"/>
+
+    <ImageView
+        android:id="@+id/alert_icons"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/red_alert_image"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/emptyView"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/alert_icons"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColor="@color/blacktext"
+        android:text="You currently have no notification history"/>
+
+
+    <com.pnikosis.materialishprogress.ProgressWheel
+        android:id="@+id/progress_wheel"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        wheel:matProg_barColor="@color/fish_orange"
+        wheel:matProg_progressIndeterminate="true" />
+</RelativeLayout>

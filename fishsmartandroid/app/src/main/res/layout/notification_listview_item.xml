@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/itemLayout"
+    tools:ignore="MissingPrefix"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor_alert_button_press">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <RelativeLayout
+            android:id="@+id/cardviewRelative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:id="@+id/imageNotif"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.mobiddiction.fishsmart.notification.RoundRectCornerImageView
+                    android:id="@+id/imageListItem"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ic_launcher" />
+
+                <ImageView
+                    android:id="@+id/play_button"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="28dp"
+                    android:src="@drawable/ic_play_circle_outline_black_24dp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/header"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_toLeftOf="@+id/imageNotif"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:maxLines="2"
+                    android:layout_marginTop="10dp"
+                    fontPath="@string/bold_font_path"
+                    android:text="TESTNING FIREBASE DEEPLINK"
+                    android:textColor="@color/fish_orange"
+                    android:textSize="20dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_below="@+id/header"
+                android:layout_marginTop="10dp"
+                android:id="@+id/start_date"
+                android:layout_toLeftOf="@+id/imageNotif"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="16dp"
+                    android:textColor="#727272"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:maxLines="2"
+                    android:id="@+id/caption"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_below="@+id/start_date"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/dateLayout"
+                android:layout_toLeftOf="@+id/imageNotif"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginTop="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/calendar"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#B6B6B6"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:maxLines="2"
+                    android:id="@+id/date"
+                    android:layout_height="wrap_content"
+                    android:text="2 days ago"/>
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/moreInfo"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:layout_below="@+id/dateLayout"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button_fill_red"
+                android:text="MORE INFO"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

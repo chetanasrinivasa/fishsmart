@@ -1,0 +1,234 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#eeeeee"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/setting"
+        android:layout_height="match_parent"
+        android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="40dp"
+        android:visibility="visible"
+        android:id="@+id/setting"
+        android:background="#000000">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            android:textSize="@dimen/font_size_sub_text"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:id="@+id/textviewSetting"
+            android:layout_centerVertical="true"
+            android:text="Please enable location permission"/>
+
+        <ImageButton
+            android:id="@+id/settingButton"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/background_transparent"
+            android:src="@drawable/settings" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0"
+            android:id="@+id/hiddenButton"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dropdownbtn"
+        android:layout_width="350dp"
+        android:layout_below="@+id/setting"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner_withborder"
+        android:clickable="true"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/mapnametext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:ellipsize="end"
+            android:layerType="software"
+            android:maxLines="1"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:text="Marine Protected Areas and Spearfishing Closures"
+            android:textColor="@color/unselectedtabtext"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/arrowimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/downarrow"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/dropdownlayout"
+        android:layout_below="@+id/dropdownbtn"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@drawable/rules_filter_bkg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/layoutmarine"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/marinetext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layerType="software"
+                android:padding="10dp"
+                android:text="Marine Protected Areas and Spearfishing Closures"
+                android:textColor="@color/blacktext"
+                android:textSize="18.2sp" />
+
+            <ToggleButton
+                android:id="@+id/marinetogglebtn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:padding="20dp"
+                android:textOn=""
+                android:textOff=""
+                android:layout_gravity="center_vertical|right"
+                android:background="@drawable/maptoggle"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/layoutartificial"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/artificialtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical|left"
+                android:textColor="@color/blacktext"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textSize="18.2sp"
+                android:text="Artificial Reefs"/>
+
+            <ToggleButton
+                android:id="@+id/artificialtogglebtn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:textOn=""
+                android:textOff=""
+                android:layout_gravity="center_vertical|right"
+                android:background="@drawable/maptoggle"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/layoutfish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/fishtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/blacktext"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:textSize="18.2sp"
+                android:text="Fish Aggregating Devices"/>
+
+            <ToggleButton
+                android:id="@+id/fishtogglebtn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:textOn=""
+                android:textOff=""
+                android:layout_gravity="center_vertical|right"
+                android:background="@drawable/maptoggle"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/mylocation"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="25dp"
+        android:scaleType="centerInside"
+        android:background="@null"
+        android:src="@drawable/locicon"
+        />
+
+    <RelativeLayout
+        android:id="@+id/overlay"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:background="#000000"
+        android:alpha="0.4"
+        android:layout_height="match_parent">
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/loaderimage"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:src="@drawable/map_renderer"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

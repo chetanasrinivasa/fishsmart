@@ -1,0 +1,36 @@
+<resources>
+    <color name="customemenu">#007870</color>
+    <color name="placeholder">#42000000</color>
+    <!--<color name="selectedtabtext">#df8871</color>-->
+    <color name="selectedtabtext">#d25939</color>
+    <!--<color name="unselectedtabtext">#9b9b9b</color>-->
+    <color name="unselectedtabtext">#7b7b7b</color>
+    <color name="blacktext">#4a4a4a</color>
+    <color name="morpinch">#00a89c</color>
+    <color name="darkmorpinch">#378386</color>
+    <color name="white">#FFFFFF</color>
+    <color name="tabnavigate">#00837A</color>
+    <color name="red">#ff0000</color>
+    <color name="edittext_hint">#B6B6B6</color>
+    <color name="red_button">#DC313A</color>
+    <color name="default_background_color">#FAFAFA</color>
+    <color name="fish_orange">#FF885B</color>
+
+    <color name="bgColor_overlay">#60000000</color>
+    <color name="bgColor_alertview_alert">#f8f8f8</color>
+    <color name="bgColor_alertview_alert_start">#f0f0f0</color>
+    <color name="textColor_alert_title">#000000</color>
+    <color name="textColor_actionsheet_title">#8f8f8f</color>
+    <color name="textColor_alert_msg">#000000</color>
+    <color name="textColor_actionsheet_msg">#8f8f8f</color>
+    <color name="bgColor_divier">#d7d7db</color>
+    <color name="textColor_alert_button_cancel">#007aff</color>
+    <color name="textColor_alert_button_destructive">#ff3b30</color>
+    <color name="textColor_alert_button_others">#007aff</color>
+    <color name="bgColor_alert_button_press">#EAEAEA</color>
+    <color name="bgColor_actionsheet_cancel_nor">#ffffff</color>
+
+    <color name="catlog_tab_selected_color">#FF885B</color>
+    <color name="catlog_tab_selected_dark_color">#EA5922</color>
+
+</resources>

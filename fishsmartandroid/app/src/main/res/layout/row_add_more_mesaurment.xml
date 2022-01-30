@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <!-- ============= WEIGHT, LENGTH ============= -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <!-- =========== WEIGHT =========== -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/rounded_corner_withoutborder"
+                android:padding="10dp">
+
+                <EditText
+                    android:id="@+id/edtWeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_toLeftOf="@+id/txtKgs"
+                    android:background="@android:color/transparent"
+                    android:digits="0123456789."
+                    android:hint="Weight"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/blacktext"
+                    android:textColorHint="@color/edittext_hint"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/txtKgs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:text="kgs"
+                    android:textColor="@color/blacktext"
+                    android:textSize="18dp" />
+            </RelativeLayout>
+
+            <!-- =========== LENGTH =========== -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/rounded_corner_withoutborder"
+                android:padding="10dp">
+
+                <EditText
+                    android:id="@+id/edtCms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_toLeftOf="@+id/txtCms"
+                    android:background="@android:color/transparent"
+                    android:digits="0123456789."
+                    android:hint="Length"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/blacktext"
+                    android:textColorHint="@color/edittext_hint"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/txtCms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:text="cms"
+                    android:textColor="@color/blacktext"
+                    android:textSize="18dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:padding="10dp"
+            android:src="@drawable/close_blue" />
+
+        <!-- ============= SELECT SPICES, KEPT ============= -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <!-- =========== SELECT SPICES =========== -->
+            <RelativeLayout
+                android:id="@+id/selectSpeciesLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner_withoutborder"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/txtSelectSpecies"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Select Species"
+                    android:textColor="@color/blacktext"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/bariol_regular"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_right_arrow" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/keptReleasedLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <!-- =========== KEPT =========== -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/rounded_corner_withoutborder"
+                android:padding="10dp">
+
+                <EditText
+                    android:id="@+id/mainEdtKept"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_toLeftOf="@+id/mainTxtKept"
+                    android:background="@android:color/transparent"
+                    android:digits="0123456789"
+                    android:hint="0"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:textColor="@color/blacktext"
+                    android:textColorHint="@color/edittext_hint"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/bariol_regular"/>
+
+                <TextView
+                    android:id="@+id/mainTxtKept"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:text="Kept"
+                    android:textColor="@color/blacktext"
+                    android:textSize="18dp" />
+            </RelativeLayout>
+
+            <!-- =========== RELEASED =========== -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/rounded_corner_withoutborder"
+                android:padding="10dp">
+
+                <EditText
+                    android:id="@+id/mainEdtReleased"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_toLeftOf="@+id/mainTxtRelease"
+                    android:background="@android:color/transparent"
+                    android:digits="0123456789"
+                    android:hint="0"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:textColor="@color/blacktext"
+                    android:textColorHint="@color/edittext_hint"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/bariol_regular"/>
+
+                <TextView
+                    android:id="@+id/mainTxtRelease"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:text="Released"
+                    android:textColor="@color/blacktext"
+                    android:textSize="18dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relKepReleasedDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_corner_withoutborder"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/catchlogMeasurments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:gravity="start"
+                    android:layout_marginStart="5dp"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/blacktext"
+                    android:textSize="18dp"
+                    android:visibility="gone"
+                    android:fontFamily="@font/bariol_regular"/>
+
+                <TextView
+                    android:id="@+id/txtEditDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_gravity="start|center_vertical"
+                    android:gravity="start|center_vertical"
+                    android:textColor="@color/blacktext"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/bariol_bold"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_right_arrow" />
+        </RelativeLayout>
+
+        <!-- =========== BAIT, LURE =========== -->
+        <!-- =========== SELECT SPICES =========== -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/rounded_corner_withoutborder"
+            android:padding="10dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/txtSelectMethod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:text="Select Methods"
+                android:textColor="@color/blacktext"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_right_arrow" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="1">
+
+            <CheckBox
+                android:id="@+id/chkBait"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:button="@drawable/radio_selector_catlog"
+                android:paddingLeft="7dp"
+                android:text="Bait"
+                android:textColor="@color/blacktext"
+                android:textSize="18dp"
+                android:fontFamily="@font/bariol_regular"/>
+
+            <CheckBox
+                android:id="@+id/chkLure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:button="@drawable/radio_selector_catlog"
+                android:paddingLeft="7dp"
+                android:text="Lure"
+                android:textColor="@color/blacktext"
+                android:textSize="18dp"
+                android:fontFamily="@font/bariol_regular"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

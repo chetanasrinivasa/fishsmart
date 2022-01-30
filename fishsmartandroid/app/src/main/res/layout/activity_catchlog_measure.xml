@@ -1,0 +1,174 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="fill_horizontal"
+        android:background="@drawable/home_header">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:src="@drawable/backbtn" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/keptReleasedLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <!-- =========== KEPT =========== -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/rounded_corner_withoutborder"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/edtKept"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_toLeftOf="@+id/txtKept"
+                android:background="@android:color/transparent"
+                android:digits="0123456789."
+                android:hint="0"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal"
+                android:textColor="@color/blacktext"
+                android:textColorHint="@color/edittext_hint"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/txtKept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:text="Kept"
+                android:textColor="@color/blacktext"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <!-- =========== RELEASED =========== -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/rounded_corner_withoutborder"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/edtReleased"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_toLeftOf="@+id/txtRelease"
+                android:background="@android:color/transparent"
+                android:digits="0123456789."
+                android:hint="0"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                android:textColor="@color/blacktext"
+                android:textColorHint="@color/edittext_hint"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/txtRelease"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:text="Released"
+                android:textColor="@color/blacktext"
+                android:textSize="18dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/keptReleasedLayout"
+        android:layout_margin="15dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/titleKept"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="start"
+                    android:text="Kept: "
+                    android:fontFamily="@font/bariol_regular"
+                    android:textColor="@color/blacktext"
+                    android:textSize="22sp" />
+
+
+                <LinearLayout
+                    android:id="@+id/measureKept"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/titleReleased"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="start"
+                    android:text="Released: "
+                    android:fontFamily="@font/bariol_regular"
+                    android:textColor="@color/blacktext"
+                    android:textSize="22sp" />
+
+                <LinearLayout
+                    android:id="@+id/measureReleased"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

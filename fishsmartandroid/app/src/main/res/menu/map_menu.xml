@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/key"
+        android:icon="@drawable/keymenu"
+        app:showAsAction="ifRoom"
+        android:title="key" />
+
+    <item android:id="@+id/info"
+        android:icon="@drawable/exclaimmenu"
+        app:showAsAction="ifRoom"
+        android:title="info" />
+
+</menu>

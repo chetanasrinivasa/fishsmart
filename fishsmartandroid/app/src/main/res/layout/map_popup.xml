@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_corner_withoutborder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/popuplogo"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/white"
+            android:cropToPadding="true"/>
+
+        <TextView
+            android:id="@+id/titletext"
+            android:textColor="@color/blacktext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"/>
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:background="@color/mapbox_blue"
+            android:scrollbars="vertical"
+            android:layout_height="250dp" />
+
+        <Button
+            android:id="@+id/thanksbtn"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rulesdesc"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/rounded_corner_black"
+            android:layout_centerInParent="true"
+            android:text="Thanks" />
+
+</LinearLayout>

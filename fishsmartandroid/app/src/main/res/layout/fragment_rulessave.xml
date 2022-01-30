@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#eeeeee"
+    android:id="@+id/mainlinearlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/filterlayout"
+                android:layout_centerHorizontal="true"
+                android:layout_width="fill_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/dropdownbtn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_corner_withborder"
+                    android:clickable="true"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/filterguidetext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:textSize="20sp"
+                        android:textColor="@color/unselectedtabtext"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Filter guides by..." />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/downarrow"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/dropdownlayout"
+                    android:layout_below="@+id/dropdownbtn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:background="@drawable/rules_filter_bkg"
+                    android:gravity="center"
+
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/layoutsalt"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:clickable="true">
+
+                        <TextView
+                            android:id="@+id/salttext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center_horizontal"
+                            android:padding="10dp"
+                            android:textColor="@color/blacktext"
+                            android:textSize="18.2sp"
+                            android:text="Salt and Freshwater Guides"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layouttrout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true">
+
+                        <TextView
+                            android:id="@+id/trouttext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/blacktext"
+                            android:padding="10dp"
+                            android:textSize="18.2sp"
+                            android:text="Trout Fishing Guides"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layoutspear"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true">
+
+                        <TextView
+                            android:id="@+id/speartext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/blacktext"
+                            android:padding="10dp"
+                            android:textSize="18.2sp"
+                            android:text="Spear Fishing Guides"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layoutsafe"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true">
+
+                        <TextView
+                            android:id="@+id/safetext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/blacktext"
+                            android:padding="10dp"
+                            android:textSize="18.2sp"
+                            android:text="Safe Fishing Guides"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layoutregional"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true">
+
+                        <TextView
+                            android:id="@+id/regionaltext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/blacktext"
+                            android:padding="10dp"
+                            android:textSize="18.2sp"
+                            android:text="Regional Fishing Guides"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/rules"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:textColor="@color/blacktext"
+                android:layout_marginBottom="20dp"
+                android:text="RULES"/>
+
+            <RelativeLayout
+                android:id="@+id/saltwaterbtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rounded_corner_withoutborder"
+                android:clickable="true"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/saltwaterbtntext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/selectedtabtext"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Saltwater Rules" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/sidearrow"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/freshwaterbtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rounded_corner_withoutborder"
+                android:clickable="true"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/freshwaterbtntext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/selectedtabtext"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Freshwater Rules" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/sidearrow"/>
+
+            </RelativeLayout>
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"/>
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/verginlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textvergin1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="24sp"
+                    android:textColor="@color/blacktext"
+                    android:layout_marginBottom="20dp"
+                    android:text="NOTHING SAVED TO GUIDES"/>
+
+                <ImageView
+                    android:id="@+id/heartimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textvergin1"
+                    android:background="@drawable/bigheart"
+                    android:layout_marginBottom="20dp"
+                    android:layout_centerInParent="true"/>
+
+                <TextView
+                    android:layout_below="@+id/heartimg"
+                    android:id="@+id/textvergin2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="24sp"
+                    android:textColor="@color/blacktext"
+                    android:layout_marginBottom="20dp"
+                    android:text="Tap the heart icon on the 'Explore' page to save a guide here for quick viewing later or for favouriting your most viewed guides."/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/waterlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/water"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="24sp"
+                    android:textColor="@color/blacktext"
+                    android:layout_marginBottom="20dp"
+                    android:text="SALT AND FRESHWATER GUIDES"/>
+
+                <LinearLayout
+                    android:layout_below="@+id/water"
+                    android:id="@+id/waterdynamiclayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/troutlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/trout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="24sp"
+                    android:textColor="@color/blacktext"
+                    android:layout_marginBottom="20dp"
+                    android:text="TROUT FISHING GUIDES"/>
+
+                <LinearLayout
+                    android:layout_below="@+id/trout"
+                    android:id="@+id/troutdynamiclayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/spearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/spear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="24sp"
+                    android:textColor="@color/blacktext"
+                    android:layout_marginBottom="20dp"
+                    android:text="SPEAR FISHING GUIDES"/>
+
+                <LinearLayout
+                    android:layout_below="@+id/spear"
+                    android:id="@+id/speardynamiclayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/locallayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/local"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="24sp"
+                    android:textColor="@color/blacktext"
+                    android:layout_marginBottom="20dp"
+                    android:text="SAFE FISHING GUIDES"/>
+
+                <LinearLayout
+                    android:layout_below="@+id/local"
+                    android:id="@+id/localdynamiclayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/regionallayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/regional"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="24sp"
+                    android:textColor="@color/blacktext"
+                    android:layout_marginBottom="20dp"
+                    android:text="REGIONAL FISHING GUIDES"/>
+
+                <LinearLayout
+                    android:layout_below="@+id/regional"
+                    android:id="@+id/regionaldynamiclayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

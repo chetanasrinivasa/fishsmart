@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#eeeeee"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="40dp"
+        android:visibility="visible"
+        android:id="@+id/setting"
+        android:background="#000000">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            android:textSize="@dimen/font_size_sub_text"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:id="@+id/textviewSetting"
+            android:layout_centerVertical="true"
+            android:text="Please enable app permissions"/>
+
+        <ImageButton
+            android:id="@+id/settingButton"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/background_transparent"
+            android:src="@drawable/settings" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0"
+            android:id="@+id/hiddenButton"/>
+    </RelativeLayout>
+
+    <ListView
+        android:visibility="gone"
+        android:id="@+id/listviewsearch"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/rounded_corner_withoutborder"
+        android:layout_marginTop="5dp"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swiperefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrollview"
+            android:nestedScrollingEnabled="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical">
+
+                <!--<com.mobiddiction.fishsmart.Home.HorizontalListView
+                android:id="@+id/hlist"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_gravity="center_vertical"/>-->
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/hlist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical" />
+
+                <!-- <android.support.v4.view.ViewPager
+                     android:id="@+id/viewPager"
+                     android:layout_width="wrap_content"
+                     android:layout_height="230dp" />-->
+
+                <TextView
+                    android:id="@+id/latestphototext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp"
+                    android:gravity="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/blacktext"
+                    android:text="LATEST PHOTOS"
+                    android:fontFamily="@font/bariol_bold"/>
+
+                <LinearLayout
+                    android:id="@+id/gallerylayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/rounded_corner_withoutborder"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:id="@+id/container"
+                        android:layout_margin="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="400dp" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/orangebkg">
+
+                        <TextView
+                            android:id="@+id/textopengallery"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/font_size_sub_heading"
+                            android:layout_margin="10dp"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:text="@string/open_the_gallery"
+                            android:fontFamily="@font/bariol_regular"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/whetherlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/rounded_corner_withoutborder"
+                    android:orientation="vertical">
+
+                    <ProgressBar
+                        android:id="@+id/progress_bar"
+                        android:visibility="gone"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true" />
+
+                    <TextView
+                        android:id="@+id/loctitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="22sp"
+                        android:layout_margin="15dp"
+                        android:textAllCaps="true"
+                        android:textColor="@color/blacktext"
+                        android:text="BYRON BAY, NSW"
+                        android:fontFamily="@font/bariol_bold"/>
+
+                    <TextView
+                        android:id="@+id/locdesc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="start"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:lineSpacingMultiplier="1.2"
+                        android:textColor="@color/unselectedtabtext"
+                        android:fontFamily="@font/bariol_regular"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/temptext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:textSize="14sp"
+                            android:gravity="start"
+                            android:textColor="@color/blacktext"
+                            android:text="Current Temperature:"
+                            android:fontFamily="@font/bariol_bold"/>
+
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/highlowtext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:textColor="@color/blacktext"
+                            android:text=""
+                            android:fontFamily="@font/bariol_regular"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textlabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="22sp"
+                        android:layout_margin="15dp"
+                        android:textAllCaps="true"
+                        android:textColor="@color/blacktext"
+                        android:text="NEAREST COASTAL LOCATION"
+                        android:fontFamily="@font/bariol_bold"/>
+
+                    <ImageView
+                        android:id="@+id/line6"
+                        android:layout_width="fill_parent"
+                        android:layout_height="2dp"
+                        android:background="@drawable/linegray" />
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/linear6"
+                        android:layout_below="@+id/line6"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:padding="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tidetext1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:layout_weight="1"
+                                android:layout_gravity="left"
+                                android:textColor="@color/unselectedtabtext"
+                                android:text=""
+                                android:fontFamily="@font/bariol_regular"/>
+
+                            <TextView
+                                android:id="@+id/tidedata1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:gravity="right"
+                                android:layout_weight="1"
+                                android:textColor="@color/selectedtabtext"
+                                android:text=""
+                                android:fontFamily="@font/bariol_regular"/>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="2dp"
+                            android:background="@drawable/linegray" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/linear7"
+                        android:layout_below="@+id/linear6"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:padding="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tidetext2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:layout_weight="1"
+                                android:layout_gravity="left"
+                                android:textColor="@color/unselectedtabtext"
+                                android:text=""
+                                android:fontFamily="@font/bariol_regular"/>
+
+                            <TextView
+                                android:id="@+id/tidedata2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:gravity="right"
+                                android:layout_weight="1"
+                                android:textColor="@color/selectedtabtext"
+                                android:text=""
+                                android:fontFamily="@font/bariol_regular"/>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="2dp"
+                            android:background="@drawable/linegray" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/linear8"
+                        android:layout_below="@+id/linear7"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:padding="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tidetext3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:layout_weight="1"
+                                android:layout_gravity="left"
+                                android:textColor="@color/unselectedtabtext"
+                                android:text=""
+                                android:fontFamily="@font/bariol_regular"/>
+
+                            <TextView
+                                android:id="@+id/tidedata3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:gravity="right"
+                                android:layout_weight="1"
+                                android:textColor="@color/selectedtabtext"
+                                android:text=""
+                                android:fontFamily="@font/bariol_regular"/>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="2dp"
+                            android:background="@drawable/linegray" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/linear9"
+                        android:layout_below="@+id/linear8"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:padding="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tidetext4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:layout_weight="1"
+                                android:layout_gravity="left"
+                                android:textColor="@color/unselectedtabtext"
+                                android:text=""
+                                android:fontFamily="@font/bariol_regular"/>
+
+                            <TextView
+                                android:id="@+id/tidedata4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:gravity="right"
+                                android:layout_weight="1"
+                                android:textColor="@color/selectedtabtext"
+                                android:text=""
+                                android:fontFamily="@font/bariol_regular"/>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="2dp"
+                            android:background="@drawable/linegray" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/linear10"
+                        android:layout_below="@+id/linear9"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:padding="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tidetext5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:layout_weight="1"
+                                android:layout_gravity="left"
+                                android:textColor="@color/unselectedtabtext"
+                                android:text=""
+                                android:fontFamily="@font/bariol_regular"/>
+
+                            <TextView
+                                android:id="@+id/tidedata5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:gravity="right"
+                                android:layout_weight="1"
+                                android:textColor="@color/selectedtabtext"
+                                android:text=""
+                                android:fontFamily="@font/bariol_regular"/>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="fill_parent"
+                            android:layout_height="2dp"
+                            android:background="@drawable/linegray" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/orangebkg">
+
+                        <TextView
+                            android:id="@+id/text5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:layout_margin="10dp"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:text="View weather details" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

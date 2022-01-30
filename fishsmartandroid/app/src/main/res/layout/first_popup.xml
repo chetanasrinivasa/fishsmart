@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/mainlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:background="@drawable/rounded_corner_withoutborder">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/saveimg"
+                    android:layout_width="120dp"
+                    android:layout_height="70dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/popuplogo"
+                    android:background="@android:color/white"
+                    android:cropToPadding="true" />
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blacktext"
+                    android:textSize="22sp"
+                    android:layout_marginTop="10dp"
+                    android:textAllCaps="true"
+                    android:gravity="center_horizontal"
+                    android:text="" />
+
+
+                <TextView
+                    android:id="@+id/desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:scrollbars="vertical"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:lineSpacingExtra="2dp"
+                    android:textColor="@color/unselectedtabtext">
+
+                </TextView>
+
+                <Button
+                    android:id="@+id/thanksbtn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rulesdesc"
+                    android:paddingRight="15dp"
+                    android:paddingLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/rounded_corner_black"
+                    android:layout_centerInParent="true"
+                    android:text="Thanks" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</LinearLayout>

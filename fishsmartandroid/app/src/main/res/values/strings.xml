@@ -1,0 +1,77 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">FishSmart</string>
+
+    <string name="title_activity_main_frame">MainFrameActivity</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_rules">RulesActivity</string>
+    <string name="title_activity_species">SpeciesActivity</string>
+    <string name="title_activity_speciesdetail">SpeciesDetailActivity</string>
+    <string name="title_activity_saltwater">SaltWaterActivity</string>
+    <string name="title_activity_freshwater">FreshWaterActivity</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="title_activity_webview">WebViewActivity</string>
+    <string name="title_activity_gallery">GalleryActivity</string>
+    <string name="title_activity_gallerydetail">GalleryDetailActivity</string>
+    <string name="title_activity_NewsActivity">NewsActivity</string>
+    <string name="title_activity_ContactActivity">ContactActivity</string>
+    <string name="title_activity_catchlog">CatchlogActivity</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+
+    <string name="user_profile">Profile</string>
+    <string name="update_user_profile">Update Profile</string>
+    <string name="terms_and_conditions">Terms &amp; Conditions</string>
+    <string name="change_password">Change Password</string>
+    <string name="forgot_password_title">Forgot Password?</string>
+    <string name="forgot_password_instruction">Enter your registered email and we\'ll send you reset password instructions.</string>
+    <string name="send">Send</string>
+    <string name="notifications">Notifications</string>
+    <string name="measurements">Measurements</string>
+
+    <string name="is_first_time_load">Is_First_Time_Load</string>
+    <string name="catch_log_validation_msg">Please fill in all the details of your catch before adding a new one.</string>
+
+    <string name="t_and_c"><u>Terms &amp; Conditions</u></string>
+    <string name="privacy_policy"><u>Privacy Policy</u></string>
+
+    <string name="login_failed_title">Sorry</string>
+    <string name="login_failed_message">Seems you don\'t have the right access.</string>
+
+    <string name="redirect_title">Please Note</string>
+    <string name="redirect_message">This will take you out of the app and open a new window.</string>
+
+    <string name="skip">Skip</string>
+
+    <string name="no_internet_connection">No Internet Connection</string>
+    <string name="check_connectivity">Check connectivity</string>
+    <string name="try_switch_airplane_mode">Try switching between airplane mode on/off and wait...</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="titleHome">FISHSMART NSW</string>
+    <string name="default_ga_tracking_id">UA-83603611-1</string>
+
+    <string name="disclaimer_t1">This publication may provide assistance or information but NSW DPI and its employees do not guarantee the publication is without flaw or is wholly appropriate for any particular purpose and therefore disclaims all liability for any error, loss or other consequences which may arise from relying on any information in this publication. This publication is a guide only, it does not replace the Fisheries Management Act 1994 or other acts and statutory rules applying to, or affecting recreational fishing. It is a summary of laws and regulations at the time of publication and cannot be used as a defence in a court of law. Recreational fishing regulations may change during the life of this publication. It is the responsibility of fishers to ensure they are acting within the law at all times.</string>
+    <string name="disclaimer_t2">Check regulations with your local NSW DPI fisheries office or http://www.dpi.nsw.gov.au/fisheries. No material matter in this publication may be reproduced, stored in a retrieval system, or transmitted in any form by electronic or mechanical means without the written permission of NSW DPI.</string>
+
+    <string name="offine_message">You appear to be offline: Please note you can use the Species section and access the Rules in the offline mode.</string>
+
+    <string name="lorem_ipsum_long">Lorem ipsum dolor sit amet, hendrerit pellentesque porttitor eros vel vestibulum mi, lorem vulputate tristique magna diam egestas. Vel proin odio est sed sed sed, vitae ut massa vitae erat. Metus cum, habitasse risus, nec nec arcu fringilla tempor luctus, velit nibh ut at ac, sed accumsan massa in dictumst. Est doloribus dignissim donec, luctus nascetur ullamcorper in neque libero vestibulum. Tempus porta nisl.
+
+Faucibus donec nisl velit maecenas proin tortor. Facilis arcu, ac ac. Pulvinar tristique luctus lacus elit eleifend porttitor, netus lorem id. Wisi dictumst tincidunt lacus lacus hac in, ut mus etiam, eu in mi. Pharetra nec lacus vel, duis sit pharetra velit ut, primis integer augue fermentum id ultrices sit, taciti vel.
+
+Interdum odio a turpis qui aenean. Velit turpis culpa, convallis risus etiam sit, pellentesque dui lorem vehicula vel, augue donec. Gravida consequat id viverra id, fusce placerat adipiscing at porta luctus, porta sed, rerum justo vel adipiscing quam tincidunt, risus ultricies at vivamus. Vestibulum maecenas ut vitae suscipit morbi, ut egestas, cras dui orci pharetra purus. Eros eleifend ultrices ultricies, donec etiam urna. Molestie leo aliquam. Vel quis dignissim, tempor mi mattis neque, lacus in leo quisque, in euismod, nulla neque auctor diam erat. Proin nam wisi eget nonummy ultrices, nam varius phasellus cum ac lacus, pulvinar luctus consequat lectus et elit, consequat odio nibh amet vehicula aliquam condimentum, nascetur arcu luctus hymenaeos suspendisse. Pellentesque in veritatis, suspendisse cursus amet enim ac et, quam ultrices ut sed suspendisse quisque rutrum, dui primis parturient, sed non facilisis sit. Sed elit scelerisque. Nullam vehicula eleifend vel, curabitur blandit sed sem egestas mi malesuada, tortor pede.
+
+Odio libero non penatibus, amet velit ad libero dis amet inceptos, scelerisque sed mauris mauris volutpat. Sed gravida curabitur nisl metus nisl, sapien placerat porttitor non at id elementum. Non nec duis rutrum venenatis, amet erat eget ipsum, maecenas praesent ut ut id tristique sit, lorem rhoncus consequat aliquam consectetuer vel natoque. Mattis integer vehicula. Commodo ipsum nullam et ligula in pretium, nec etiam suspendisse tellus et, sed arcu sed hymenaeos. Molestie a, erat ultricies aliquet odio et sodales, diam neque ac, convallis eros congue in.
+
+</string>
+
+    <string name="catchlog_no_history_message">You currently do not have any\ncatch log history.</string>
+    <string name="label_licensing">Licensing</string>
+    <string name="url_pay_online"><![CDATA[https://www.onegov.nsw.gov.au//gls_portal/LicenceForm.mvc/NewApplication?formId=ecfa7925-86a8-411b-81e8-725d05491d2e&agencyID=23adb6eb-2c36-4169-b365-bf26ef2367f8]]></string>
+    <string name="url_renew_licence">https://www.onegov.nsw.gov.au/gls_portal/snsw/Renew</string>
+    <string name="open_the_gallery">Open the gallery</string>
+    <string name="mapbox_access_token">pk.eyJ1IjoibnN3ZHBpZmlzaGVyaWVzIiwiYSI6ImNrbjhhZ21hdDB2d2Qyb3A3MWszNHA3djcifQ.xROvfNpKDG9U7gG6WAYArg</string>
+    <string name="mapbox_access_token1">sk.eyJ1IjoibnN3ZHBpZmlzaGVyaWVzIiwiYSI6ImNrcWF5MW1pYzAxZ3IycHA3ZmplejB2N2YifQ.X-YZ_dhwJtrK5GXbtq5LGw</string>
+
+</resources>

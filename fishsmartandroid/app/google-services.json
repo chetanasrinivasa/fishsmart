@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "275302341122",
+    "firebase_url": "https://fishsmart-b4a9d.firebaseio.com",
+    "project_id": "fishsmart-b4a9d",
+    "storage_bucket": "fishsmart-b4a9d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:275302341122:android:58e44400ccff9828",
+        "android_client_info": {
+          "package_name": "com.mobiddiction.fishsmart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "275302341122-o7q0d37sv2cmdmidop8k5dmk1t3jd87m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCF_cyrJOTqLOoPVM2e8KsOpcsxBNrIDQQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

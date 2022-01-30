@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#eeeeee"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/summaryscrollview"
+        android:scrollbars="none"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fishingrules"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:textColor="@color/blacktext"
+                android:layout_marginBottom="20dp"
+                android:text="FISHING RULES"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_corner_withoutborder"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_sub_text"
+                    android:textColor="@color/selectedtabtext"
+                    android:text="General inland waters"/>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/linegray"/>
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_sub_text"
+                    android:lineSpacingMultiplier="1.2"
+                    android:textColor="@color/unselectedtabtext"
+                    android:text="Maximum attended lines: 2 hand lines or rods and lines\n\nMaximum hooks permitted per line: 2"/>
+
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_sub_text"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/selectedtabtext"
+                    android:text="General trout dams"/>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/linegray"/>
+
+                <TextView
+                    android:id="@+id/text4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_sub_text"
+                    android:lineSpacingMultiplier="1.2"
+                    android:textColor="@color/unselectedtabtext"
+                    android:text="Maximum attended lines: 2 rods and lines only\n\nMaximum hooks permitted per line: 2 (bait) or 3 (artificial flies, lures only)"/>
+
+                <TextView
+                    android:id="@+id/text5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_sub_text"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/selectedtabtext"
+                    android:text="General trout streams"/>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/linegray"/>
+
+                <TextView
+                    android:id="@+id/text6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_sub_text"
+                    android:lineSpacingMultiplier="1.2"
+                    android:textColor="@color/unselectedtabtext"
+                    android:text="Maximum attended lines: 1 rod and line only\n\nMaximum hooks permitted per line: 2"/>
+
+                <TextView
+                    android:id="@+id/text7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_sub_text"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/selectedtabtext"
+                    android:text="General trout streams"/>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/linegray"/>
+
+                <TextView
+                    android:id="@+id/text8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_sub_text"
+                    android:lineSpacingMultiplier="1.2"
+                    android:textColor="@color/unselectedtabtext"
+                    android:text="Maximum attended lines: 1 rod and line only\n\nMaximum hooks permitted per line: 2"/>
+
+                <TextView
+                    android:id="@+id/text9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_sub_text"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/selectedtabtext"
+                    android:text="Artificial fly and lure dams (no bait fishing)"/>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/linegray"/>
+
+                <TextView
+                    android:id="@+id/text10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_sub_text"
+                    android:lineSpacingMultiplier="1.2"
+                    android:textColor="@color/unselectedtabtext"
+                    android:text="Maximum attended lines: 1 rod and line only\n\nMaximum hooks permitted per line: 3 (lure/fly only)"/>
+
+                <TextView
+                    android:id="@+id/text11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_sub_text"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/selectedtabtext"
+                    android:text="Artificial fly and lure streams (no bait fishing)"/>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/linegray"/>
+
+                <TextView
+                    android:id="@+id/text12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_sub_text"
+                    android:lineSpacingMultiplier="1.2"
+                    android:textColor="@color/unselectedtabtext"
+                    android:text="Maximum attended lines: 1 rod and line only\n\nMaximum hooks permitted per line: 2 (lure/fly only)"/>
+
+                <TextView
+                    android:id="@+id/text13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_sub_text"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/selectedtabtext"
+                    android:text="Trout spawning streams (no bait fishing)"/>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/linegray"/>
+
+                <TextView
+                    android:id="@+id/text14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_sub_text"
+                    android:lineSpacingMultiplier="1.2"
+                    android:textColor="@color/unselectedtabtext"
+                    android:text="Maximum attended lines: 1 rod and line only\n\nMaximum hooks permitted per line: 2 (lure/fly only)"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/geartype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:textColor="@color/blacktext"
+                android:layout_marginBottom="20dp"
+                android:text="GEAR TYPE"/>
+
+            <TextView
+                android:id="@+id/tapontext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:lineSpacingMultiplier="1.2"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/unselectedtabtext"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_corner_withoutborder"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_sub_text"
+                    android:textColor="@color/selectedtabtext"
+                    android:text="Hoop net or lift net"/>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/linegray"/>
+
+                <TextView
+                    android:id="@+id/text16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14.6sp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:textColor="@color/unselectedtabtext"
+                    android:text="Number permitted: 5"/>
+
+                <TextView
+                    android:id="@+id/text17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_sub_text"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/selectedtabtext"
+                    android:text="Shrimp trap"/>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/linegray"/>
+
+                <TextView
+                    android:id="@+id/text18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14.6sp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:textColor="@color/unselectedtabtext"
+                    android:text="Number permitted: 1"/>
+
+                <TextView
+                    android:id="@+id/text19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_sub_text"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/selectedtabtext"
+                    android:text="Hand hauled yabby net"/>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/linegray"/>
+
+                <TextView
+                    android:id="@+id/text20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14.6sp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:textColor="@color/unselectedtabtext"
+                    android:text="Number permitted: 1"/>
+
+                <TextView
+                    android:id="@+id/text21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_sub_text"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/selectedtabtext"
+                    android:text="Yabby traps"/>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/linegray"/>
+
+                <TextView
+                    android:id="@+id/text22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14.6sp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:textColor="@color/unselectedtabtext"
+                    android:text="Number permitted: 5"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/summary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:textColor="@color/blacktext"
+                android:layout_marginBottom="20dp"
+                android:text="SUMMARY"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@drawable/rounded_corner_withoutborder"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/listtext"
+                    android:textSize="14.6sp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/unselectedtabtext"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/mainlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rounded_corner_withoutborder">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/rounded_corner_withoutborder"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/rulename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="40dp"
+                    android:textSize="@dimen/font_size_sub_text"
+                    android:singleLine="false"
+                    android:textColor="@color/selectedtabtext"
+                    android:text="General inland waters dfgdfg fgdfgdfg dgdfg dgdfg dfgdfgfg"/>
+
+                <ToggleButton
+                    android:id="@+id/savebtn"
+                    android:layout_width="23dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textOff=""
+                    android:textOn=""
+                    android:background="@drawable/savetoggle"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/dropdownlayout"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/linegray"/>
+
+                <TextView
+                    android:id="@+id/rulesdesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_sub_text"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:textColor="@color/unselectedtabtext"
+                    android:text=""/>
+
+                <Button
+                    android:id="@+id/viewguidebtn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rulesdesc"
+                    android:paddingRight="15dp"
+                    android:paddingLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/rounded_corner_black"
+                    android:layout_centerInParent="true"
+                    android:text="View Guide" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/linegray"/>
+
+            <ImageView
+                android:id="@+id/arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/downarrow"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

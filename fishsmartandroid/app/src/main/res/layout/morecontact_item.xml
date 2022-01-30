@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/mainlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rounded_corner_withoutborder">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/rounded_corner_withoutborder"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="40dp"
+                    android:textSize="@dimen/font_size_sub_text"
+                    android:singleLine="false"
+                    android:textColor="@color/selectedtabtext"
+                    android:text="General inland waters dfgdfg fgdfgdfg dgdfg dgdfg dfgdfgfg"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/dropdownlayout"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/linegray"/>
+
+                <TextView
+                    android:id="@+id/desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_size_sub_text"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:textColor="@color/unselectedtabtext"
+                    android:text="rgtergre"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/desc"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/phonebtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="18sp"
+                        android:autoLink="phone"
+                        android:layout_margin="10dp"
+                        android:layout_marginTop="15dp"
+                        android:textColor="#FFFFFF"
+                        android:textAllCaps="false"
+                        android:background="@drawable/rounded_corner_black"
+                        android:text="Phone" />
+
+                    <Button
+                        android:id="@+id/onlinebtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="18sp"
+                        android:layout_marginTop="15dp"
+                        android:textColor="#FFFFFF"
+                        android:textAllCaps="false"
+                        android:background="@drawable/rounded_corner_black"
+                        android:layout_margin="10dp"
+                        android:text="Online" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/arrowlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/linegray"/>
+
+            <ImageView
+                android:id="@+id/arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/downarrow"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#f0f5f7"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:id="@+id/filterlayout"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/dropdownbtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner_withborder"
+            android:clickable="true"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/filterguidetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:textColor="@color/unselectedtabtext"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:text="Filter guides by..." />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/downarrow"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/dropdownlayout"
+            android:layout_below="@+id/dropdownbtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rules_filter_bkg"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layoutsalt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:clickable="true">
+
+                <TextView
+                    android:id="@+id/salttext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:textSize="18.2sp"
+                    android:text="Salt and Freshwater Guides"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layouttrout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true">
+
+                <TextView
+                    android:id="@+id/trouttext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:textSize="18.2sp"
+                    android:text="Trout Fishing Guides"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutspear"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true">
+
+                <TextView
+                    android:id="@+id/speartext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:textSize="18.2sp"
+                    android:text="Spear Fishing Guides"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutsafe"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true">
+
+                <TextView
+                    android:id="@+id/safetext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:textSize="18.2sp"
+                    android:text="Safe Fishing Guides"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutregional"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true">
+
+                <TextView
+                    android:id="@+id/regionaltext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:textSize="18.2sp"
+                    android:text="Regional Fishing Guides"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/filterlayout"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/content_fragment"></FrameLayout>
+
+</RelativeLayout>
