@@ -50,14 +50,14 @@
                     android:id="@+id/desc"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="16sp"
+                    android:textSize="18sp"
                     android:gravity="center"
                     android:scrollbars="vertical"
                     android:layout_marginTop="20dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
                     android:lineSpacingExtra="2dp"
-                    android:textColor="@color/unselectedtabtext">
+                    android:textColor="@color/blacktext">
 
                 </TextView>
 
@@ -70,6 +70,7 @@
                     android:paddingLeft="15dp"
                     android:layout_marginTop="15dp"
                     android:textColor="#FFFFFF"
+                    android:textSize="@dimen/textSize_alert_button"
                     android:background="@drawable/rounded_corner_black"
                     android:layout_centerInParent="true"
                     android:text="Thanks" />

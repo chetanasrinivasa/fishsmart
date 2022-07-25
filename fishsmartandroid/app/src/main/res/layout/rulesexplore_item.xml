@@ -27,10 +27,10 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="40dp"
-                    android:textSize="@dimen/font_size_sub_text"
                     android:singleLine="false"
+                    android:text="General inland waters dfgdfg fgdfgdfg dgdfg dgdfg dfgdfgfg"
                     android:textColor="@color/selectedtabtext"
-                    android:text="General inland waters dfgdfg fgdfgdfg dgdfg dgdfg dfgdfgfg"/>
+                    android:textSize="@dimen/font_size_sub_text" />
 
                 <ToggleButton
                     android:id="@+id/savebtn"

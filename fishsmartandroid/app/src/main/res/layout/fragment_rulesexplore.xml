@@ -39,7 +39,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:textSize="20sp"
-                        android:textColor="@color/unselectedtabtext"
+                        android:textColor="@color/blacktext"
                         android:layout_centerInParent="true"
                         android:layout_gravity="center_horizontal"
                         android:text="Filter guides by..." />

@@ -7,11 +7,11 @@
     <dimen name="fab_margin">16dp</dimen>
 
     <dimen name="textSize_alert_title">22sp</dimen>
-    <dimen name="textSize_actionsheet_title">14sp</dimen>
+    <dimen name="textSize_actionsheet_title">16sp</dimen>
     <dimen name="height_alert_title">60dp</dimen>
     <dimen name="height_actionsheet_title">40dp</dimen>
-    <dimen name="textSize_alert_msg">15sp</dimen>
-    <dimen name="textSize_actionsheet_msg">14sp</dimen>
+    <dimen name="textSize_alert_msg">17sp</dimen>
+    <dimen name="textSize_actionsheet_msg">16sp</dimen>
     <dimen name="marginBottom_alert_msg">25dp</dimen>
     <dimen name="marginBottom_actionsheet_msg">14dp</dimen>
     <dimen name="margin_alert_left_right">40dp</dimen>
@@ -23,7 +23,7 @@
     <dimen name="main_button_size">250dp</dimen>
     <dimen name="cardview__radius">8dp</dimen>
     <dimen name="font_size_sub_text">18sp</dimen>
-    <dimen name="font_size_sub_text_small">15sp</dimen>
-    <dimen name="font_size_sub_heading_small">14sp</dimen>
+    <dimen name="font_size_sub_text_small">16sp</dimen>
+    <dimen name="font_size_sub_heading_small">16sp</dimen>
     <dimen name="font_size_sub_heading">20sp</dimen>
 </resources>

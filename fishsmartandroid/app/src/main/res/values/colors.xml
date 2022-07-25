@@ -5,7 +5,7 @@
     <color name="selectedtabtext">#d25939</color>
     <!--<color name="unselectedtabtext">#9b9b9b</color>-->
     <color name="unselectedtabtext">#7b7b7b</color>
-    <color name="blacktext">#4a4a4a</color>
+    <color name="blacktext">#000000</color>
     <color name="morpinch">#00a89c</color>
     <color name="darkmorpinch">#378386</color>
     <color name="white">#FFFFFF</color>
