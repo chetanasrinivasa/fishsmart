@@ -4,10 +4,7 @@ import android.app.Application;
 import android.content.Context;
 import android.util.Log;
 
-import com.crashlytics.android.Crashlytics;
 import com.squareup.picasso.Picasso;
-import io.fabric.sdk.android.Fabric;
-import io.fabric.sdk.android.services.common.Crash;
 import io.realm.Realm;
 
 /**
@@ -28,12 +25,6 @@ public class MyApplication extends Application {
 
         super.onCreate();
 
-        Crashlytics crash = new Crashlytics();
-
-        Fabric.with(this, crash, new Crashlytics());
-//        Fabric.with(this, new Crashlytics());
-//        modelManager = ModelManager.getInstance();
-//        networkManager = NetworkManager.getInstance();
         trackingManager = new TrackingManager(this);
         context = this;
         Realm.init(this);
@@ -44,14 +35,6 @@ public class MyApplication extends Application {
         built.setIndicatorsEnabled(false);
         built.setLoggingEnabled(false);
         Picasso.setSingletonInstance(built);
-
-        boolean fabricInitialized = Fabric.isInitialized();
-        if (fabricInitialized) {
-//            crash.log("Fabric initalised");
-            Log.d(TAG, "k Fabric initialised");
-        } else {
-            Log.d(TAG, "k Fabric not initialised");
-        }
 
     }
 

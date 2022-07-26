@@ -40,8 +40,8 @@ android {
         multiDexEnabled true
         renderscriptTargetApi 20
         renderscriptSupportModeEnabled true
-        versionCode 54
-        versionName "3.0"
+        versionCode 55
+        versionName "3.1"
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
