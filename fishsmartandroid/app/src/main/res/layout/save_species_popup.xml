@@ -36,7 +36,7 @@
                 android:text="SPECIES SAVED"
                 android:textAllCaps="true"
                 android:textColor="@color/unselectedtabtext"
-                android:textSize="12sp" />
+                android:textSize="16sp" />
 
         </LinearLayout>
 
